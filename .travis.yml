@@ -2,3 +2,5 @@ langauge: node_js
 services:
   - redis-server
   - postgresql
+before_script:
+  - psql -c 'create database refundit;' -U postgres
