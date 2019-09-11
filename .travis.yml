@@ -6,6 +6,4 @@ services:
   - postgresql
 before_script:
   - npm install
-  - psql -c 'create database refundit;' -U postgres -p 5433
-addons:
-  postgresql: "10.6"
+  - psql -c 'create database refundit;' -U postgres
