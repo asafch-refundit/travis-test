@@ -15,7 +15,7 @@ const redis = require('async-redis');
 	                    host: 'localhost',
 	                    port: 5432,
 	                    user: 'potgres',
-	                    database: 'refundit'
+	                    database: process.env.PG_DATABASE
 	                },
 	                debug: true
 	            });
