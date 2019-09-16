@@ -26,5 +26,7 @@ const redis = require('async-redis');
 	const setR = await redisClient.set('key', 17);
 	const get = await redisClient.get('key');
 
-	console.log(`get: ${get}`);
+	console.log(`got from redis: ${get}`);
+
+	redisClient.quit();
 })();
